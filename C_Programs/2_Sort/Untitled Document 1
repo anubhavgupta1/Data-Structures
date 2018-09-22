@@ -1,0 +1,32 @@
+#include<stdio.h>
+int read_next_line();
+int read_all_line()
+{
+  int linecount = 0;
+  int isvalid;
+  while(!feof(stdin))
+  {
+     isvalid = read_next_line();
+     linecount = linecount + isvalid;
+  }
+  return linecount;
+}
+
+int read_next_line()
+{
+  int ch;
+  int flag = 0;
+  ch = getchar(); 
+  while((Ch!=EOF)&&(Ch!='\n'))
+  {
+     ch = getchar();
+     flag = 1;
+  }
+  return flag ||(ch=='\n')
+}
+int main()
+{
+  read_all_lines();
+  return 0;
+}
+
