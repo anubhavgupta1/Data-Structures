@@ -28,7 +28,7 @@ void insertRandom(list *head)
 		curr = curr->next;
 		count = count + 1;
 	}
-	if(count!=pos)
+	if((count+1)!=pos)
 	{
 		printf("\nPosition does not exist"); return;
 	}
