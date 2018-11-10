@@ -1,0 +1,5 @@
+int findLength(list head)
+{
+   if(!head) return 0;
+   return 1 + findLength(head->next);
+}
