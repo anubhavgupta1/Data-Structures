@@ -12,7 +12,7 @@ void deleteNode(list *head)
 	if(pos==1)
 	{
 		(*head) = (*head)->next;
-		if(!(*head))
+		if((*head))
 		{
 			(*head)->prev = NULL;
 		}
